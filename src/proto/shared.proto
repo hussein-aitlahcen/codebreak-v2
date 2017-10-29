@@ -6,11 +6,14 @@ message Account {
     int32 id = 1;
 }
 
-message WorldRegisterRequest {
+message World {
     int32 id = 1;
-    string name = 2;
-    string rpcHost = 3;
-    int32 rpcport = 4;
+    string rpcHost = 2;
+    int32 rpcPort = 3;
+}
+
+message WorldRegisterRequest {
+    World world = 1;
 }
 
 message WorldRegisterResponse {

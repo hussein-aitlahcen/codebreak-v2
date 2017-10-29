@@ -22,25 +22,25 @@ namespace CodebreakV2.Shared.Intercom {
     static SharedReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgxzaGFyZWQucHJvdG8SG0NvZGVicmVha1YyLlNoYXJlZC5JbnRlcmNvbSIX",
-            "CglDaGFyYWN0ZXISCgoCaWQYASABKAUiFQoHQWNjb3VudBIKCgJpZBgBIAEo",
-            "BSJSChRXb3JsZFJlZ2lzdGVyUmVxdWVzdBIKCgJpZBgBIAEoBRIMCgRuYW1l",
-            "GAIgASgJEg8KB3JwY0hvc3QYAyABKAkSDwoHcnBjcG9ydBgEIAEoBSIoChVX",
-            "b3JsZFJlZ2lzdGVyUmVzcG9uc2USDwoHc3VjY2VzcxgBIAEoCCJDCgpCYW5S",
-            "ZXF1ZXN0EjUKB2FjY291bnQYASABKAsyJC5Db2RlYnJlYWtWMi5TaGFyZWQu",
-            "SW50ZXJjb20uQWNjb3VudCJVCgtCYW5SZXNwb25zZRI1CgdhY2NvdW50GAEg",
-            "ASgLMiQuQ29kZWJyZWFrVjIuU2hhcmVkLkludGVyY29tLkFjY291bnQSDwoH",
-            "c3VjY2VzcxgCIAEoCCJKChFMb2dpblRva2VuUmVxdWVzdBI1CgdhY2NvdW50",
-            "GAEgASgLMiQuQ29kZWJyZWFrVjIuU2hhcmVkLkludGVyY29tLkFjY291bnQi",
-            "WgoSTG9naW5Ub2tlblJlc3BvbnNlEjUKB2FjY291bnQYASABKAsyJC5Db2Rl",
-            "YnJlYWtWMi5TaGFyZWQuSW50ZXJjb20uQWNjb3VudBINCgV0b2tlbhgCIAEo",
-            "CWIGcHJvdG8z"));
+            "CgxzaGFyZWQucHJvdG8SG0NvZGVicmVha1YyLlNoYXJlZC5JbnRlcmNvbSIV",
+            "CgdBY2NvdW50EgoKAmlkGAEgASgFIjUKBVdvcmxkEgoKAmlkGAEgASgFEg8K",
+            "B3JwY0hvc3QYAiABKAkSDwoHcnBjUG9ydBgDIAEoBSJJChRXb3JsZFJlZ2lz",
+            "dGVyUmVxdWVzdBIxCgV3b3JsZBgBIAEoCzIiLkNvZGVicmVha1YyLlNoYXJl",
+            "ZC5JbnRlcmNvbS5Xb3JsZCIoChVXb3JsZFJlZ2lzdGVyUmVzcG9uc2USDwoH",
+            "c3VjY2VzcxgBIAEoCCJDCgpCYW5SZXF1ZXN0EjUKB2FjY291bnQYASABKAsy",
+            "JC5Db2RlYnJlYWtWMi5TaGFyZWQuSW50ZXJjb20uQWNjb3VudCJVCgtCYW5S",
+            "ZXNwb25zZRI1CgdhY2NvdW50GAEgASgLMiQuQ29kZWJyZWFrVjIuU2hhcmVk",
+            "LkludGVyY29tLkFjY291bnQSDwoHc3VjY2VzcxgCIAEoCCJKChFMb2dpblRv",
+            "a2VuUmVxdWVzdBI1CgdhY2NvdW50GAEgASgLMiQuQ29kZWJyZWFrVjIuU2hh",
+            "cmVkLkludGVyY29tLkFjY291bnQiWgoSTG9naW5Ub2tlblJlc3BvbnNlEjUK",
+            "B2FjY291bnQYASABKAsyJC5Db2RlYnJlYWtWMi5TaGFyZWQuSW50ZXJjb20u",
+            "QWNjb3VudBINCgV0b2tlbhgCIAEoCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.Character), global::CodebreakV2.Shared.Intercom.Character.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.Account), global::CodebreakV2.Shared.Intercom.Account.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.WorldRegisterRequest), global::CodebreakV2.Shared.Intercom.WorldRegisterRequest.Parser, new[]{ "Id", "Name", "RpcHost", "Rpcport" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.World), global::CodebreakV2.Shared.Intercom.World.Parser, new[]{ "Id", "RpcHost", "RpcPort" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.WorldRegisterRequest), global::CodebreakV2.Shared.Intercom.WorldRegisterRequest.Parser, new[]{ "World" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.WorldRegisterResponse), global::CodebreakV2.Shared.Intercom.WorldRegisterResponse.Parser, new[]{ "Success" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.BanRequest), global::CodebreakV2.Shared.Intercom.BanRequest.Parser, new[]{ "Account" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.BanResponse), global::CodebreakV2.Shared.Intercom.BanResponse.Parser, new[]{ "Account", "Success" }, null, null, null),
@@ -52,123 +52,6 @@ namespace CodebreakV2.Shared.Intercom {
 
   }
   #region Messages
-  public sealed partial class Character : pb::IMessage<Character> {
-    private static readonly pb::MessageParser<Character> _parser = new pb::MessageParser<Character>(() => new Character());
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Character> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::CodebreakV2.Shared.Intercom.SharedReflection.Descriptor.MessageTypes[0]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Character() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Character(Character other) : this() {
-      id_ = other.id_;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Character Clone() {
-      return new Character(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as Character);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Character other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      return true;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Character other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
   public sealed partial class Account : pb::IMessage<Account> {
     private static readonly pb::MessageParser<Account> _parser = new pb::MessageParser<Account>(() => new Account());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -176,7 +59,7 @@ namespace CodebreakV2.Shared.Intercom {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::CodebreakV2.Shared.Intercom.SharedReflection.Descriptor.MessageTypes[1]; }
+      get { return global::CodebreakV2.Shared.Intercom.SharedReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -286,6 +169,179 @@ namespace CodebreakV2.Shared.Intercom {
 
   }
 
+  public sealed partial class World : pb::IMessage<World> {
+    private static readonly pb::MessageParser<World> _parser = new pb::MessageParser<World>(() => new World());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<World> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::CodebreakV2.Shared.Intercom.SharedReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public World() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public World(World other) : this() {
+      id_ = other.id_;
+      rpcHost_ = other.rpcHost_;
+      rpcPort_ = other.rpcPort_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public World Clone() {
+      return new World(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private int id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rpcHost" field.</summary>
+    public const int RpcHostFieldNumber = 2;
+    private string rpcHost_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RpcHost {
+      get { return rpcHost_; }
+      set {
+        rpcHost_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "rpcPort" field.</summary>
+    public const int RpcPortFieldNumber = 3;
+    private int rpcPort_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcPort {
+      get { return rpcPort_; }
+      set {
+        rpcPort_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as World);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(World other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (RpcHost != other.RpcHost) return false;
+      if (RpcPort != other.RpcPort) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (RpcHost.Length != 0) hash ^= RpcHost.GetHashCode();
+      if (RpcPort != 0) hash ^= RpcPort.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Id);
+      }
+      if (RpcHost.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(RpcHost);
+      }
+      if (RpcPort != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(RpcPort);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (RpcHost.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RpcHost);
+      }
+      if (RpcPort != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RpcPort);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(World other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.RpcHost.Length != 0) {
+        RpcHost = other.RpcHost;
+      }
+      if (other.RpcPort != 0) {
+        RpcPort = other.RpcPort;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            RpcHost = input.ReadString();
+            break;
+          }
+          case 24: {
+            RpcPort = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class WorldRegisterRequest : pb::IMessage<WorldRegisterRequest> {
     private static readonly pb::MessageParser<WorldRegisterRequest> _parser = new pb::MessageParser<WorldRegisterRequest>(() => new WorldRegisterRequest());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -310,10 +366,7 @@ namespace CodebreakV2.Shared.Intercom {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public WorldRegisterRequest(WorldRegisterRequest other) : this() {
-      id_ = other.id_;
-      name_ = other.name_;
-      rpcHost_ = other.rpcHost_;
-      rpcport_ = other.rpcport_;
+      World = other.world_ != null ? other.World.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -321,47 +374,14 @@ namespace CodebreakV2.Shared.Intercom {
       return new WorldRegisterRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "world" field.</summary>
+    public const int WorldFieldNumber = 1;
+    private global::CodebreakV2.Shared.Intercom.World world_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
-      get { return id_; }
+    public global::CodebreakV2.Shared.Intercom.World World {
+      get { return world_; }
       set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "rpcHost" field.</summary>
-    public const int RpcHostFieldNumber = 3;
-    private string rpcHost_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string RpcHost {
-      get { return rpcHost_; }
-      set {
-        rpcHost_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "rpcport" field.</summary>
-    public const int RpcportFieldNumber = 4;
-    private int rpcport_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Rpcport {
-      get { return rpcport_; }
-      set {
-        rpcport_ = value;
+        world_ = value;
       }
     }
 
@@ -378,20 +398,14 @@ namespace CodebreakV2.Shared.Intercom {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
-      if (Name != other.Name) return false;
-      if (RpcHost != other.RpcHost) return false;
-      if (Rpcport != other.Rpcport) return false;
+      if (!object.Equals(World, other.World)) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (RpcHost.Length != 0) hash ^= RpcHost.GetHashCode();
-      if (Rpcport != 0) hash ^= Rpcport.GetHashCode();
+      if (world_ != null) hash ^= World.GetHashCode();
       return hash;
     }
 
@@ -402,38 +416,17 @@ namespace CodebreakV2.Shared.Intercom {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
-      if (RpcHost.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(RpcHost);
-      }
-      if (Rpcport != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Rpcport);
+      if (world_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(World);
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (RpcHost.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(RpcHost);
-      }
-      if (Rpcport != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rpcport);
+      if (world_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(World);
       }
       return size;
     }
@@ -443,17 +436,11 @@ namespace CodebreakV2.Shared.Intercom {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.RpcHost.Length != 0) {
-        RpcHost = other.RpcHost;
-      }
-      if (other.Rpcport != 0) {
-        Rpcport = other.Rpcport;
+      if (other.world_ != null) {
+        if (world_ == null) {
+          world_ = new global::CodebreakV2.Shared.Intercom.World();
+        }
+        World.MergeFrom(other.World);
       }
     }
 
@@ -465,20 +452,11 @@ namespace CodebreakV2.Shared.Intercom {
           default:
             input.SkipLastField();
             break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Name = input.ReadString();
-            break;
-          }
-          case 26: {
-            RpcHost = input.ReadString();
-            break;
-          }
-          case 32: {
-            Rpcport = input.ReadInt32();
+          case 10: {
+            if (world_ == null) {
+              world_ = new global::CodebreakV2.Shared.Intercom.World();
+            }
+            input.ReadMessage(world_);
             break;
           }
         }
