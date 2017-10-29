@@ -15,13 +15,22 @@ namespace CodebreakV2.Shared.Intercom {
 
     static readonly grpc::Marshaller<global::CodebreakV2.Shared.Intercom.BanRequest> __Marshaller_BanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::CodebreakV2.Shared.Intercom.BanRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::CodebreakV2.Shared.Intercom.BanResponse> __Marshaller_BanResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::CodebreakV2.Shared.Intercom.BanResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::CodebreakV2.Shared.Intercom.WorldRegisterRequest> __Marshaller_WorldRegisterRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::CodebreakV2.Shared.Intercom.WorldRegisterRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::CodebreakV2.Shared.Intercom.WorldRegisterResponse> __Marshaller_WorldRegisterResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::CodebreakV2.Shared.Intercom.WorldRegisterResponse.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::CodebreakV2.Shared.Intercom.BanRequest, global::CodebreakV2.Shared.Intercom.BanResponse> __Method_Ban = new grpc::Method<global::CodebreakV2.Shared.Intercom.BanRequest, global::CodebreakV2.Shared.Intercom.BanResponse>(
+    static readonly grpc::Method<global::CodebreakV2.Shared.Intercom.BanRequest, global::CodebreakV2.Shared.Intercom.BanResponse> __Method_AccountBan = new grpc::Method<global::CodebreakV2.Shared.Intercom.BanRequest, global::CodebreakV2.Shared.Intercom.BanResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "Ban",
+        "AccountBan",
         __Marshaller_BanRequest,
         __Marshaller_BanResponse);
+
+    static readonly grpc::Method<global::CodebreakV2.Shared.Intercom.WorldRegisterRequest, global::CodebreakV2.Shared.Intercom.WorldRegisterResponse> __Method_WorldRegister = new grpc::Method<global::CodebreakV2.Shared.Intercom.WorldRegisterRequest, global::CodebreakV2.Shared.Intercom.WorldRegisterResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "WorldRegister",
+        __Marshaller_WorldRegisterRequest,
+        __Marshaller_WorldRegisterResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -32,7 +41,12 @@ namespace CodebreakV2.Shared.Intercom {
     /// <summary>Base class for server-side implementations of AuthService</summary>
     public abstract partial class AuthServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::CodebreakV2.Shared.Intercom.BanResponse> Ban(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::CodebreakV2.Shared.Intercom.BanResponse> AccountBan(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::CodebreakV2.Shared.Intercom.WorldRegisterResponse> WorldRegister(global::CodebreakV2.Shared.Intercom.WorldRegisterRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -62,21 +76,37 @@ namespace CodebreakV2.Shared.Intercom {
       {
       }
 
-      public virtual global::CodebreakV2.Shared.Intercom.BanResponse Ban(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::CodebreakV2.Shared.Intercom.BanResponse AccountBan(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return Ban(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return AccountBan(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::CodebreakV2.Shared.Intercom.BanResponse Ban(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::CallOptions options)
+      public virtual global::CodebreakV2.Shared.Intercom.BanResponse AccountBan(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_Ban, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_AccountBan, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::CodebreakV2.Shared.Intercom.BanResponse> BanAsync(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::CodebreakV2.Shared.Intercom.BanResponse> AccountBanAsync(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return BanAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return AccountBanAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::CodebreakV2.Shared.Intercom.BanResponse> BanAsync(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::CodebreakV2.Shared.Intercom.BanResponse> AccountBanAsync(global::CodebreakV2.Shared.Intercom.BanRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_Ban, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_AccountBan, null, options, request);
+      }
+      public virtual global::CodebreakV2.Shared.Intercom.WorldRegisterResponse WorldRegister(global::CodebreakV2.Shared.Intercom.WorldRegisterRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return WorldRegister(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::CodebreakV2.Shared.Intercom.WorldRegisterResponse WorldRegister(global::CodebreakV2.Shared.Intercom.WorldRegisterRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_WorldRegister, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::CodebreakV2.Shared.Intercom.WorldRegisterResponse> WorldRegisterAsync(global::CodebreakV2.Shared.Intercom.WorldRegisterRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return WorldRegisterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::CodebreakV2.Shared.Intercom.WorldRegisterResponse> WorldRegisterAsync(global::CodebreakV2.Shared.Intercom.WorldRegisterRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_WorldRegister, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override AuthServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -90,7 +120,8 @@ namespace CodebreakV2.Shared.Intercom {
     public static grpc::ServerServiceDefinition BindService(AuthServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_Ban, serviceImpl.Ban).Build();
+          .AddMethod(__Method_AccountBan, serviceImpl.AccountBan)
+          .AddMethod(__Method_WorldRegister, serviceImpl.WorldRegister).Build();
     }
 
   }

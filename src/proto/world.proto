@@ -4,15 +4,6 @@ import "shared.proto";
 
 package CodebreakV2.Shared.Intercom;
 
-message LoginTokenRequest {
-    Account account = 1;
-}
-
-message LoginTokenResponse {
-    Account account = 1;
-    string token = 2;
-}
-
 service WorldService {
     rpc GenerateLoginToken (LoginTokenRequest) returns (LoginTokenResponse);
 }

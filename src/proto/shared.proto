@@ -9,3 +9,32 @@ message Character {
 message Account {
     int32 id = 1;
 }
+
+message WorldRegisterRequest {
+    int32 id = 1;
+    string name = 2;
+    string rpcHost = 3;
+    int32 rpcport = 4;
+}
+
+message WorldRegisterResponse {
+    bool success = 1;
+}
+
+message BanRequest {
+    Account account = 1;
+}
+
+message BanResponse {
+    Account account = 1;
+    bool success = 2;
+}
+
+message LoginTokenRequest {
+    Account account = 1;
+}
+
+message LoginTokenResponse {
+    Account account = 1;
+    string token = 2;
+}
