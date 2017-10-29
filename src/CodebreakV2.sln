@@ -1,0 +1,90 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodebreakV2.Auth", "CodebreakV2.Auth\CodebreakV2.Auth.csproj", "{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodebreakV2.Shared", "CodebreakV2.Shared\CodebreakV2.Shared.csproj", "{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodebreakV2.World", "CodebreakV2.World\CodebreakV2.World.csproj", "{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodebreakV2.Protocol", "CodebreakV2.Protocol\CodebreakV2.Protocol.csproj", "{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodebreakV2.ProtocolBuilder", "CodebreakV2.ProtocolBuilder\CodebreakV2.ProtocolBuilder.csproj", "{3E096484-9B81-472C-AD31-D59B9F64C7F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Debug|x64.ActiveCfg = Debug|x64
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Debug|x64.Build.0 = Debug|x64
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Debug|x86.ActiveCfg = Debug|x86
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Debug|x86.Build.0 = Debug|x86
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Release|x64.ActiveCfg = Release|x64
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Release|x64.Build.0 = Release|x64
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Release|x86.ActiveCfg = Release|x86
+		{DF810D74-BE5A-44A2-8B39-2F3A42DD4CA6}.Release|x86.Build.0 = Release|x86
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Debug|x64.ActiveCfg = Debug|x64
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Debug|x64.Build.0 = Debug|x64
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Debug|x86.ActiveCfg = Debug|x86
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Debug|x86.Build.0 = Debug|x86
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Release|x64.ActiveCfg = Release|x64
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Release|x64.Build.0 = Release|x64
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Release|x86.ActiveCfg = Release|x86
+		{722D9CFF-C0C7-4C5F-B58E-F971A91F9461}.Release|x86.Build.0 = Release|x86
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Debug|x64.ActiveCfg = Debug|x64
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Debug|x64.Build.0 = Debug|x64
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Debug|x86.ActiveCfg = Debug|x86
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Debug|x86.Build.0 = Debug|x86
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Release|x64.ActiveCfg = Release|x64
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Release|x64.Build.0 = Release|x64
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Release|x86.ActiveCfg = Release|x86
+		{E32CA715-F0F5-4A5D-8A6B-88AEFEC15182}.Release|x86.Build.0 = Release|x86
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Debug|x64.ActiveCfg = Debug|x64
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Debug|x64.Build.0 = Debug|x64
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Debug|x86.ActiveCfg = Debug|x86
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Debug|x86.Build.0 = Debug|x86
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Release|x64.ActiveCfg = Release|x64
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Release|x64.Build.0 = Release|x64
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Release|x86.ActiveCfg = Release|x86
+		{5C5EFF47-F991-4EEF-8F5F-50FFAC8E63A0}.Release|x86.Build.0 = Release|x86
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Debug|x64.ActiveCfg = Debug|x64
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Debug|x64.Build.0 = Debug|x64
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Debug|x86.ActiveCfg = Debug|x86
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Debug|x86.Build.0 = Debug|x86
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Release|x64.ActiveCfg = Release|x64
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Release|x64.Build.0 = Release|x64
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Release|x86.ActiveCfg = Release|x86
+		{3E096484-9B81-472C-AD31-D59B9F64C7F5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

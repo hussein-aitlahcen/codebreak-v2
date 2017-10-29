@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "shared.proto";
+
+package CodebreakV2.Shared.Intercom;
+
+enum BanResult {
+    SUCCESS = 0;
+    ALREADY = 1;
+    FAILED = 2;
+}
+
+message BanRequest {
+    Account account = 1;
+}
+
+message BanResponse {
+    Account account = 1;
+    BanResult result = 2;
+}
+
+service AuthService {
+    rpc Ban (BanRequest) returns (BanResponse);
+}
