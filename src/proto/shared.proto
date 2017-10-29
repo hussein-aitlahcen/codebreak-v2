@@ -2,10 +2,6 @@ syntax = "proto3";
 
 package CodebreakV2.Shared.Intercom;
 
-message Character {
-    int32 id = 1;
-}
-
 message Account {
     int32 id = 1;
 }
