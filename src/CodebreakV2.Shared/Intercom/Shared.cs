@@ -28,13 +28,11 @@ namespace CodebreakV2.Shared.Intercom {
             "dGVyUmVxdWVzdBIxCgV3b3JsZBgBIAEoCzIiLkNvZGVicmVha1YyLlNoYXJl",
             "ZC5JbnRlcmNvbS5Xb3JsZCIoChVXb3JsZFJlZ2lzdGVyUmVzcG9uc2USDwoH",
             "c3VjY2VzcxgBIAEoCCJDCgpCYW5SZXF1ZXN0EjUKB2FjY291bnQYASABKAsy",
-            "JC5Db2RlYnJlYWtWMi5TaGFyZWQuSW50ZXJjb20uQWNjb3VudCJVCgtCYW5S",
-            "ZXNwb25zZRI1CgdhY2NvdW50GAEgASgLMiQuQ29kZWJyZWFrVjIuU2hhcmVk",
-            "LkludGVyY29tLkFjY291bnQSDwoHc3VjY2VzcxgCIAEoCCJKChFMb2dpblRv",
-            "a2VuUmVxdWVzdBI1CgdhY2NvdW50GAEgASgLMiQuQ29kZWJyZWFrVjIuU2hh",
-            "cmVkLkludGVyY29tLkFjY291bnQiWgoSTG9naW5Ub2tlblJlc3BvbnNlEjUK",
-            "B2FjY291bnQYASABKAsyJC5Db2RlYnJlYWtWMi5TaGFyZWQuSW50ZXJjb20u",
-            "QWNjb3VudBINCgV0b2tlbhgCIAEoCWIGcHJvdG8z"));
+            "JC5Db2RlYnJlYWtWMi5TaGFyZWQuSW50ZXJjb20uQWNjb3VudCIeCgtCYW5S",
+            "ZXNwb25zZRIPCgdzdWNjZXNzGAIgASgIIkoKEUxvZ2luVG9rZW5SZXF1ZXN0",
+            "EjUKB2FjY291bnQYASABKAsyJC5Db2RlYnJlYWtWMi5TaGFyZWQuSW50ZXJj",
+            "b20uQWNjb3VudCIjChJMb2dpblRva2VuUmVzcG9uc2USDQoFdG9rZW4YAiAB",
+            "KAliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -43,9 +41,9 @@ namespace CodebreakV2.Shared.Intercom {
             new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.WorldRegisterRequest), global::CodebreakV2.Shared.Intercom.WorldRegisterRequest.Parser, new[]{ "World" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.WorldRegisterResponse), global::CodebreakV2.Shared.Intercom.WorldRegisterResponse.Parser, new[]{ "Success" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.BanRequest), global::CodebreakV2.Shared.Intercom.BanRequest.Parser, new[]{ "Account" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.BanResponse), global::CodebreakV2.Shared.Intercom.BanResponse.Parser, new[]{ "Account", "Success" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.BanResponse), global::CodebreakV2.Shared.Intercom.BanResponse.Parser, new[]{ "Success" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.LoginTokenRequest), global::CodebreakV2.Shared.Intercom.LoginTokenRequest.Parser, new[]{ "Account" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.LoginTokenResponse), global::CodebreakV2.Shared.Intercom.LoginTokenResponse.Parser, new[]{ "Account", "Token" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::CodebreakV2.Shared.Intercom.LoginTokenResponse), global::CodebreakV2.Shared.Intercom.LoginTokenResponse.Parser, new[]{ "Token" }, null, null, null)
           }));
     }
     #endregion
@@ -729,24 +727,12 @@ namespace CodebreakV2.Shared.Intercom {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BanResponse(BanResponse other) : this() {
-      Account = other.account_ != null ? other.Account.Clone() : null;
       success_ = other.success_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BanResponse Clone() {
       return new BanResponse(this);
-    }
-
-    /// <summary>Field number for the "account" field.</summary>
-    public const int AccountFieldNumber = 1;
-    private global::CodebreakV2.Shared.Intercom.Account account_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::CodebreakV2.Shared.Intercom.Account Account {
-      get { return account_; }
-      set {
-        account_ = value;
-      }
     }
 
     /// <summary>Field number for the "success" field.</summary>
@@ -773,7 +759,6 @@ namespace CodebreakV2.Shared.Intercom {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Account, other.Account)) return false;
       if (Success != other.Success) return false;
       return true;
     }
@@ -781,7 +766,6 @@ namespace CodebreakV2.Shared.Intercom {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (account_ != null) hash ^= Account.GetHashCode();
       if (Success != false) hash ^= Success.GetHashCode();
       return hash;
     }
@@ -793,10 +777,6 @@ namespace CodebreakV2.Shared.Intercom {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (account_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Account);
-      }
       if (Success != false) {
         output.WriteRawTag(16);
         output.WriteBool(Success);
@@ -806,9 +786,6 @@ namespace CodebreakV2.Shared.Intercom {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (account_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Account);
-      }
       if (Success != false) {
         size += 1 + 1;
       }
@@ -819,12 +796,6 @@ namespace CodebreakV2.Shared.Intercom {
     public void MergeFrom(BanResponse other) {
       if (other == null) {
         return;
-      }
-      if (other.account_ != null) {
-        if (account_ == null) {
-          account_ = new global::CodebreakV2.Shared.Intercom.Account();
-        }
-        Account.MergeFrom(other.Account);
       }
       if (other.Success != false) {
         Success = other.Success;
@@ -839,13 +810,6 @@ namespace CodebreakV2.Shared.Intercom {
           default:
             input.SkipLastField();
             break;
-          case 10: {
-            if (account_ == null) {
-              account_ = new global::CodebreakV2.Shared.Intercom.Account();
-            }
-            input.ReadMessage(account_);
-            break;
-          }
           case 16: {
             Success = input.ReadBool();
             break;
@@ -1003,24 +967,12 @@ namespace CodebreakV2.Shared.Intercom {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LoginTokenResponse(LoginTokenResponse other) : this() {
-      Account = other.account_ != null ? other.Account.Clone() : null;
       token_ = other.token_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LoginTokenResponse Clone() {
       return new LoginTokenResponse(this);
-    }
-
-    /// <summary>Field number for the "account" field.</summary>
-    public const int AccountFieldNumber = 1;
-    private global::CodebreakV2.Shared.Intercom.Account account_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::CodebreakV2.Shared.Intercom.Account Account {
-      get { return account_; }
-      set {
-        account_ = value;
-      }
     }
 
     /// <summary>Field number for the "token" field.</summary>
@@ -1047,7 +999,6 @@ namespace CodebreakV2.Shared.Intercom {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Account, other.Account)) return false;
       if (Token != other.Token) return false;
       return true;
     }
@@ -1055,7 +1006,6 @@ namespace CodebreakV2.Shared.Intercom {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (account_ != null) hash ^= Account.GetHashCode();
       if (Token.Length != 0) hash ^= Token.GetHashCode();
       return hash;
     }
@@ -1067,10 +1017,6 @@ namespace CodebreakV2.Shared.Intercom {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (account_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Account);
-      }
       if (Token.Length != 0) {
         output.WriteRawTag(18);
         output.WriteString(Token);
@@ -1080,9 +1026,6 @@ namespace CodebreakV2.Shared.Intercom {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (account_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Account);
-      }
       if (Token.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Token);
       }
@@ -1093,12 +1036,6 @@ namespace CodebreakV2.Shared.Intercom {
     public void MergeFrom(LoginTokenResponse other) {
       if (other == null) {
         return;
-      }
-      if (other.account_ != null) {
-        if (account_ == null) {
-          account_ = new global::CodebreakV2.Shared.Intercom.Account();
-        }
-        Account.MergeFrom(other.Account);
       }
       if (other.Token.Length != 0) {
         Token = other.Token;
@@ -1113,13 +1050,6 @@ namespace CodebreakV2.Shared.Intercom {
           default:
             input.SkipLastField();
             break;
-          case 10: {
-            if (account_ == null) {
-              account_ = new global::CodebreakV2.Shared.Intercom.Account();
-            }
-            input.ReadMessage(account_);
-            break;
-          }
           case 18: {
             Token = input.ReadString();
             break;

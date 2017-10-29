@@ -25,7 +25,6 @@ message BanRequest {
 }
 
 message BanResponse {
-    Account account = 1;
     bool success = 2;
 }
 
@@ -34,6 +33,5 @@ message LoginTokenRequest {
 }
 
 message LoginTokenResponse {
-    Account account = 1;
     string token = 2;
 }
